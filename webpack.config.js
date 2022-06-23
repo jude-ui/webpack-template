@@ -23,6 +23,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/, // 제외할 경로
         use: [
           'babel-loader' // es6 이상 구분 해석
         ]
